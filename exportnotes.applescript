@@ -1,7 +1,5 @@
 tell application "Notes"
-  set ff to first folder whose name = "exporttest"
-  set ns to notes of ff
-  repeat with n in ns
+  repeat with n in notes
     set b to get body of n
     set t to get name of n
     set c to t & b
